@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nike.css">
+    <title>Nike|Walk proud</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo2">
+            <a class="logo2" href="https://www.nike.com" target="_blank"><img src="nikelogo.png"></a>
+        </div>
+
+        <nav>
+            <a class="logo" href="https://www.nike.com" target="_blank">NIKE</a>
+            <div class="toolbar" id="toolbar">
+                <ul>
+                    <li><a href="#"><button onclick="scrollToSection('home')">Home</button></a></li>
+                    <li><a href="#"><button onclick="scrollToSection('men')">Men</button></a></li>
+                    <li><a href="#"><button onclick="scrollToSection('women')">Women</button></a></li>
+                    <li><a href="#"><button onclick="scrollToSection('kids')">Kids</button></a></li>
+                    <li><a href="#"><button onclick="scrollToSection('accesories')">Accessories</button></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="text">
+                <h2>Nike Algeria,<br>Air Jordan 1 Low</h2>
+                <p>Always fresh, always in-season. The AJ-1 is a wearable piece of Jordan history, with premium materials and a classic silhouette.  No free samples, but trust us—they're good.</p>
+            </div>
+            <div class="image">
+                <img src="nikeair.png">
+            </div>
+        </div>
+
+        <button class="buy-button">Buy Me</button>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            console.log("Button clicked. Scrolling to section with ID:", sectionId);
+            var element = document.getElementById(sectionId);
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>
